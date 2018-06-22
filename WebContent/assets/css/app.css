@@ -1,0 +1,793 @@
+@font-face {
+    font-family:'AvenirNext LT Pro MediumCn';
+    src: url('../webfonts/AvenirNextLTPro-MediumCn.eot');
+	src: url('../webfonts/AvenirNextLTPro-MediumCn.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/AvenirNextLTPro-MediumCn.woff2') format('woff2'),
+		url('../webfonts/AvenirNextLTPro-MediumCn.woff') format('woff'),
+		url('../webfonts/AvenirNextLTPro-MediumCn.svg#AvenirNextLTPro-MediumCn') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'AvenirNext LT Pro Demi';
+    src: url('../webfonts/AvenirNextLTPro-Demi.eot');
+    src: url('../webfonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
+        url('../webfonts/AvenirNextLTPro-Demi.woff') format('woff'),
+        url('../webfonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+    font-family:'AvenirNext LT Pro Regular';
+    src: url('../webfonts/AvenirNextLTPro-Regular.eot');
+    src: url('../webfonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../webfonts/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('../webfonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0-10FFFF;
+}
+
+body {
+    color: #464646;
+    font-family:'AvenirNext LT Pro Regular';
+}
+
+a {
+    color: #ed1c3f;
+}
+
+a:hover {
+    color:#222222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'AvenirNext LT Pro Demi';
+    font-weight: normal;
+}
+
+h1, h2, h3{
+    color: #3f3973;
+}
+
+.label {
+	font-family:'AvenirNext LT Pro Demi';
+	font-size:0.8rem;
+}
+
+.label.primary {
+    background: #ed1c3f;
+    color: white;
+}
+
+.content h6 {
+    color: #3f3973;
+}
+
+.pad-button {
+    padding-top:0.5rem;
+}
+
+.r-top-pad {
+    padding-top: 0 !important;
+}
+
+.pad-l-r {
+    padding: 2rem 4rem;
+}
+
+.padded {
+    padding: 4rem;
+}
+
+.mandatory {
+    color: red;
+}
+
+.button {
+    color: white !important;
+    font-family:'AvenirNext LT Pro Demi';
+    background: #ed1c3f;
+    margin:0;
+}
+
+.button.sp {
+    color: #3f3b67 !important;
+    font-family:'AvenirNext LT Pro Demi';
+    background: white;
+    border: 1px solid #3f3b67;
+    margin:0 0 0 0.5rem;
+    border-radius: 10px;
+}
+
+.button.sp:hover {
+    color: white !important;
+    background: #3f3b67;
+}
+
+.button:hover {
+    background:#555555;
+}
+
+.breadcrumbs a {
+    color: #3f3b67;
+}
+
+.pagination .current {
+    padding: .1875rem .625rem;
+    background: #3f3b67;
+    color: #fefefe;
+    cursor: default;
+}
+
+.header {
+    position: relative;
+    z-index: 99;
+}
+
+.top-bar, .top-bar ul {
+    background-color: white;
+}
+
+.top-bar ul.menu li a {
+    color: #4c4c4c;
+    font-size: 0.75rem;
+    /*font-family:'AvenirNext LT Pro Demi';*/
+    text-transform: uppercase;
+}
+
+.top-bar ul.menu li.is-active a {
+    color: #fa7875;
+    font-family:'AvenirNext LT Pro Demi';
+}
+
+.top-bar ul.menu li a:hover {
+    color:#111111;
+}
+
+.top-bar ul.menu li.spacer {
+    width: 2rem;
+}
+
+.menu .button {
+	margin-left:0.5rem;
+}
+
+.title-bar {
+    display: none;
+    background: transparent;
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    content: '';
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: #3f3b67 transparent transparent;
+    right: 5px;
+    left: auto;
+    margin-top: -3px;
+}
+
+.spx span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.3rem;
+}
+
+.dropdown.menu a.spx {
+    padding: .3rem 1rem;
+}
+
+.is-dropdown-submenu {
+    border: none;
+    background: #fefefe; 
+    text-align: right;
+}
+
+.top-bar ul.menu li.has-submenu a {
+    color: #3f3b67;
+    font-family:'AvenirNext LT Pro Demi';
+    font-size: 0.85rem;
+    text-transform: none;
+}
+
+.top-bar ul.menu.submenu li a {
+    color: #3f3b67;
+    font-family:'AvenirNext LT Pro Regular';
+    font-size: 0.85rem;
+    text-transform: none;
+}
+
+.top-bar ul.menu.submenu li a:hover {
+    color: white !important;
+    background: #3f3b67;
+}
+
+.has-submenu a {
+    color: #3f3b67 !important;
+}
+
+.mini-p-image {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #3f3b67
+}
+
+.mini-p-image img {
+    display: inline-block;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.main-content {
+    background-image: url(../img/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding:4rem 0 6rem;
+    min-height: calc(100vh - 53px);
+}
+
+.login-content {
+    background-image: url(../img/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding:4rem 0;
+    height: calc(100vh - 53px);
+}
+
+.account-content {
+    background-image: url(../img/account-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding:4rem 0;
+    min-height: calc(100vh - 53px);
+}
+
+.content {
+    padding: 5rem 0;
+}
+
+.banner {
+	background:#3f3b67;
+    /*border-bottom: 2px solid #f26d7d;*/
+}
+
+.banner.r-bg {
+	background:transparent;
+	background-image:url(../img/white-tint.png);
+    /*border-bottom: 2px solid #f26d7d;*/
+}
+
+.banner .banner-caption {
+    color: white;
+    /*display: block;*/
+}
+
+.banner .banner-caption h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.banner .banner-caption p {
+    color: white;
+    line-height: 1.3;
+}
+
+.banner .event-date {
+    display: inline-block;
+    background: white;
+    color: #464646;
+    font-size: 0.85rem;
+    padding:0.2rem 0.2rem 1rem !important;
+    text-align: center;
+    width: 50px !important;
+    height: 4rem !important;
+}
+
+.banner .event-date .day {
+    font-size: 1.95rem;
+}
+
+.banner .ls-inner {
+    background:transparent !important;
+}
+
+.banner a:hover {
+	color:white;
+}
+
+#slider {
+	background:#3f3b67;
+}
+
+.create-account {
+    background-image: url(../img/signup-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding:4rem 0 6rem;
+    min-height: calc(100vh - 53px);
+}
+
+.create-account .info-container {
+    color: white;
+}
+
+.create-account .info-container h2 {
+    color: white;
+}
+
+.create-account .info-container p {
+    padding: 0 0.5rem;
+}
+
+.white-tint {
+    background-image: url(../img/white-tint.png);
+}
+
+.event-item {
+    background-image: url(../img/white-tint.png);
+    margin-bottom: 1.875rem;
+    border-radius:0 0 3px 3px;
+}
+
+.event-item.r-margin {
+	margin:0;
+	background-color: #f26d7d;
+	background-image: none;
+}
+
+.event-wrap {
+	position:relative;
+}
+
+.image-icon {
+	position:absolute;
+	top:-10px;
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background:#ed1c3f;
+	border-radius:50%;
+	padding:0.3rem 0;
+	color:white;
+	text-align:center;
+	outline:none;
+}
+
+.image-icon.delete-image {
+	background:red;
+	left:-10px;
+}
+
+.image-icon.edit-image {
+	right:-10px;
+}
+
+.event-item img {
+	width:100%;
+	-o-object-fit: cover;
+     object-fit: cover;
+     width: 100%;
+     height:100%;
+}
+
+.event-item .event-image {
+    position: relative;
+    color:white;
+    background-color: #f26d7d;
+    width:100%;
+    height:250px;
+}
+
+.event-item .gallery-image {
+    position: relative;
+    display:block;
+    width:100%;
+    height:159px;
+    color:white;
+    background-color: #f26d7d;
+    transition: all 1s ease-out;
+}
+
+.event-item .gallery-image img {
+	-o-object-fit: cover;
+     object-fit: cover;
+     width: 100%;
+     height:100%;
+     transition: all 1s ease-out;
+}
+
+.event-item:hover .gallery-image img, event-item:hover .event-image img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.event-item .event-image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.event-item .event-desc {
+    padding:1.2rem 1.6rem;
+    text-align: left;
+}
+
+.event-item .gallery-desc {
+    padding:0.4rem 0.6rem;
+    text-align: left;
+}
+
+.event-item .gallery-desc p {
+   	font-size:0.85rem;
+   	margin:0;
+}
+
+.event-item .event-desc .date {
+    display: block;
+    color: #464646;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.event-item .event-desc .title {
+    display: block;
+    color: #464646;
+    font-family:'AvenirNext LT Pro Demi';
+    /* These are technically the same, but use both */
+  	overflow-wrap: break-word;
+  	word-wrap: break-word;
+
+  	-ms-word-break: break-all;
+  	/* This is the dangerous one in WebKit, as it breaks things wherever */
+  	word-break: break-all;
+  	/* Instead use this non-standard one: */
+  	word-break: break-word;
+
+  	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+  	-ms-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-webkit-hyphens: auto;
+ 	hyphens: auto;
+}
+
+.event-item .gallery-desc .title {
+	color: #464646;
+   	font-size:0.75rem;
+   	text-transform:uppercase;
+}
+
+.event-item .event-desc .location {
+    display: block;
+    color: #464646;
+    font-size: 0.85rem;
+}
+
+.event-content {
+	background:url(../img/white-tint.png);
+	padding:2.5rem;
+}
+
+.account-content h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.account-content h5 i {
+    color: #2762ce;
+}
+
+.account-content .image-placeholder {
+    width: 180px;
+    height: 180px;
+    background-color: #3f3b67;
+    border-radius: 50%;
+}
+
+.account-content .image-placeholder img {
+	border-radius:50%;
+}
+
+.account-content label {
+    color: #363636;
+    font-family:'AvenirNext LT Pro Demi';
+}
+
+.account-content [type=color], .account-content [type=date], .account-content [type=datetime-local], .account-content [type=datetime], 
+.account-content [type=email], .account-content [type=month], .account-content [type=number], .account-content [type=password], 
+.account-content [type=search], .account-content [type=tel], .account-content [type=text], .account-content [type=time], 
+.account-content [type=url], .account-content [type=week], .account-content textarea, .account-content select {   
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.account-content [type='text']:focus, .account-content [type='password']:focus, .account-content [type='date']:focus, 
+.account-content [type='datetime']:focus, .account-content [type='datetime-local']:focus, .account-content [type='month']:focus, 
+.account-content [type='week']:focus, .account-content [type='email']:focus, .account-content [type='number']:focus, .account-content [type='search']:focus, 
+.account-content [type='tel']:focus, .account-content [type='time']:focus, .account-content [type='url']:focus, .account-content [type='color']:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #ed1c3f !important;
+    background-color: transparent;
+    box-shadow:none;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out; 
+}
+
+.account-content textarea {
+    max-width: 100%; 
+    height: 12rem;}
+
+#custom-form [type=color], #custom-form [type=date], #custom-form [type=datetime-local], #custom-form [type=datetime], 
+#custom-form [type=email], #custom-form [type=month], #custom-form [type=number], #custom-form [type=password], 
+#custom-form [type=search], #custom-form [type=tel], #custom-form [type=text], #custom-form [type=time], #custom-form [type=url], #custom-form [type=week], #custom-form textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f5f5f5;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+#custom-form .input-group-label {
+    height: 2.4375rem;
+    padding: 0 0.5rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#custom-form .input-group>:first-child {
+    border-radius:0;
+}
+
+#custom-form select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f5f5f5;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    outline: none;
+}
+
+#custom-form [type='text']:focus, #custom-form [type='password']:focus, #custom-form [type='date']:focus, 
+#custom-form [type='datetime']:focus, #custom-form [type='datetime-local']:focus, #custom-form [type='month']:focus, 
+#custom-form [type='week']:focus, #custom-form [type='email']:focus, #custom-form [type='number']:focus, #custom-form [type='search']:focus, 
+#custom-form [type='tel']:focus, #custom-form [type='time']:focus, #custom-form [type='url']:focus, #custom-form [type='color']:focus,
+  textarea:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ed1c3f;
+    background-color: transparent;
+    box-shadow:none;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out; 
+}
+
+#custom-form textarea {
+  max-width: 100%; }
+#custom-form textarea[rows] {
+    height: 10rem; }
+
+#custom-form input::-webkit-input-placeholder,
+#custom-form textarea::-webkit-input-placeholder {
+  color: #ffffff; }
+
+#custom-form input::-moz-placeholder,
+#custom-form textarea::-moz-placeholder {
+  color: #ffffff; }
+
+#custom-form input:-ms-input-placeholder,
+#custom-form textarea:-ms-input-placeholder {
+  color: #ffffff; }
+
+#custom-form input::placeholder,
+#custom-form textarea::placeholder {
+  color: #ffffff; }
+
+#custom-form input:disabled, input[readonly],
+#custom-form textarea:disabled,
+#custom-form textarea[readonly] {
+  background-color: transparent;
+  border-bottom: 1px solid #cccccc;
+  cursor: not-allowed; }
+
+table tbody, table tfoot, table thead {
+	border:none;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: transparent;
+    background-image:url(../img/white-tint.png);
+}
+
+table thead {
+    background: #3f3b67;
+    color: white;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    display: inline-block !important;
+    width: auto !important;
+    margin-bottom: 0.7em !important;
+    margin-left: 0.5em;
+}
+
+table tbody tr:nth-child(even) {
+    border-bottom: 0;
+    background-color: rgba(220,220,247,0.5); }
+    
+ 
+ /* Jquery confirm css modification */
+ .jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button, .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button {
+    text-transform: capitalize;
+    font-size: 0.85rem !important;
+    font-weight: normal;
+    font-family:'AvenirNext LT Pro Demi' !important;
+    text-shadow: none;
+}
+
+.jconfirm.jconfirm-white .jconfirm-box, .jconfirm.jconfirm-light .jconfirm-box {
+	max-width:650px;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.jconfirm .jconfirm-box {
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    outline: 0;
+    padding: 1.5rem 1.5rem 0.5rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload-area {
+	background:url(../img/white-tint.png);
+	min-height:500px;
+	width:100%;
+	border:2px dashed #3f3b67;
+	border-radius:4px;
+	text-align:center;
+}
+
+.dz-message {
+	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index:1;
+}
+
+.dz-message span {
+	color:#cccccc;
+	font-size:1.5rem;
+	font-family:'AvenirNext LT Pro Demi';
+}
+
+.upload-area {
+	position:relative;
+}
+
+.button-area {
+	margin-bottom:0.5rem;
+}
+
+.dz-image-preview {
+	display:inline-block;
+	vertical-align:top;
+	width:120px;
+	margin:0.5rem;
+	/* These are technically the same, but use both */
+  	overflow-wrap: break-word;
+  	word-wrap: break-word;
+
+  	-ms-word-break: break-all;
+  	/* This is the dangerous one in WebKit, as it breaks things wherever */
+  	word-break: break-all;
+  	/* Instead use this non-standard one: */
+  	word-break: break-word;
+
+  	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+  	-ms-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-webkit-hyphens: auto;
+ 	hyphens: auto;
+}
+
+.dz-image-preview .dz-details{
+	font-size:0.65rem;
+	padding:0.4rem;
+}
+
+.dz-success-mark svg, .dz-error-mark svg {
+	display:none;
+	margin:0 0.2rem;
+	width:16px !important;
+	height:16px !important;
+}
+
+.dz-remove {
+	font-size:0.75rem;
+}
+
+#dropzonePreview {
+	position:relative;
+	background:white;
+	padding:2rem;
+	text-align:left;
+	z-index:2;
+}
+
+.form-error {
+	width:100%;
+}
+
+.form-error.is-visible {
+    display: block !important;
+    width:100%;
+}
+
+.footer {
+    margin-top: -37px;
+    width: 100%;
+    padding:0.5rem 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}

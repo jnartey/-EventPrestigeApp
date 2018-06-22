@@ -1,0 +1,6 @@
+projectKey=EventPrestigeApp:EventPrestigeApp
+serverUrl=http://localhost:9000
+serverVersion=6.7.4.38452
+dashboardUrl=http://localhost:9000/dashboard/index/EventPrestigeApp:EventPrestigeApp
+ceTaskId=AWQA87B8v8uoIboar8-u
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWQA87B8v8uoIboar8-u
